@@ -5,8 +5,8 @@
 
 	// Test
 	joe.describe('map plugin', function(describe,it){
-		var Chainy = require('../../').extend().require(['set', 'map', 'done'])
-		
+		var Chainy = require('chainy-core').subclass().require('set').addExtension('map', require('../'))
+
 		it("should work with a synchronous iterator", function(next){
 			Chainy.create()
 				.set([1,2,3])
