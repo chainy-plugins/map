@@ -53,7 +53,7 @@ The replacement value (or lack thereof) is used to replace the value of the item
 Example:
 
 ``` javascript
-require('chainy-core').create().require('set', 'map', 'log')
+require('chainy-core').create().require('set map log')
 	.set([1,2,3])
 	
 	// Synchronous iterator
