@@ -45,10 +45,12 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "chainy-core": "1"
+    "chainy-core": "1",
+    "chainy-plugin-each": "*"
   },
   "devDependencies": {
     "chainy-plugin-set": "*",
+    "chainy-plugin-each": "*",
     "chainy-core": "1",
     "joe": "~1.5.0",
     "joe-reporter-console": "~1.2.1",
