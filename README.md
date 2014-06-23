@@ -1,7 +1,7 @@
 
 <!-- TITLE/ -->
 
-# Map action for [ChainyJS](http://chainy.bevry.me)
+# Map action for [ChainyJS](http://chainyjs.org)
 
 <!-- /TITLE -->
 
@@ -53,7 +53,7 @@ The replacement value (or lack thereof) is used to replace the value of the item
 Example:
 
 ``` javascript
-require('chainy-core').create().require('set map log')
+require('chainy').create().require('set map log')
 	.set([1,2,3])
 	
 	// Synchronous iterator
@@ -81,7 +81,7 @@ require('chainy-core').create().require('set map log')
 ### [Browserify](http://browserify.org/)
 - Use: `require('chainy-plugin-map')`
 - Install: `npm install --save chainy-plugin-map`
-- CDN URL: `//wzrd.in/bundle/chainy-plugin-map@0.1.0`
+- CDN URL: `//wzrd.in/bundle/chainy-plugin-map@1.0.0`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('chainy-plugin-map')`

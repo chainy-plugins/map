@@ -1,11 +1,13 @@
 {
-  "title": "Map action for [ChainyJS](http://chainy.bevry.me)",
+  "title": "Map action for [ChainyJS](http://chainyjs.org)",
   "name": "chainy-plugin-map",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Chainy action that replaces each item in the array with the result of an asynchronous or synchronous iterator",
   "homepage": "https://github.com/chainy-plugins/map",
   "keywords": [
     "chainy-action",
+    "chainy-iterator",
+    "chainy-standalone",
     "chainy-modifier",
     "chainy-plugin",
     "chainy-extension",
@@ -46,11 +48,11 @@
   "dependencies": {},
   "peerDependencies": {
     "chainy-core": "1",
-    "chainy-plugin-each": "*"
+    "chainy-plugin-each": "1"
   },
   "devDependencies": {
-    "chainy-plugin-set": "*",
-    "chainy-plugin-each": "*",
+    "chainy-plugin-set": "1",
+    "chainy-plugin-each": "1",
     "chainy-core": "1",
     "joe": "~1.5.0",
     "joe-reporter-console": "~1.2.1",
