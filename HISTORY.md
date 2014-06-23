@@ -1,5 +1,8 @@
 # History
 
+## v1.0.2 June 23, 2014
+- No longer standalone, as we care about inheriting the parent chain's extensions
+
 ## v1.0.1 June 23, 2014
 - Initial official release
 
