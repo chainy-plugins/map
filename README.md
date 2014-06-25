@@ -81,7 +81,7 @@ require('chainy').create().require('set map log')
 ### [Browserify](http://browserify.org/)
 - Use: `require('chainy-plugin-map')`
 - Install: `npm install --save chainy-plugin-map`
-- CDN URL: `//wzrd.in/bundle/chainy-plugin-map@1.0.2`
+- CDN URL: `//wzrd.in/bundle/chainy-plugin-map@1.0.3`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('chainy-plugin-map')`
