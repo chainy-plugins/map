@@ -1,6 +1,6 @@
 <!-- TITLE/ -->
 
-<h1>Map action for [ChainyJS](http://chainyjs.org)</h1>
+<h1>Map action for ChainyJS</h1>
 
 <!-- /TITLE -->
 
@@ -84,7 +84,7 @@ require('chainy').create().require('set map log')
 <a href="http://browserify.org" title="Browserify lets you require('modules') in the browser by bundling up all of your dependencies"><h3>Browserify</h3></a><ul>
 <li>Install: <code>npm install --save chainy-plugin-map</code></li>
 <li>Module: <code>require('chainy-plugin-map')</code></li>
-<li>CDN URL: <code>//wzrd.in/bundle/chainy-plugin-map@1.0.4</code></li></ul>
+<li>CDN URL: <code>//wzrd.in/bundle/chainy-plugin-map@1.0.5</code></li></ul>
 
 <a href="http://enderjs.com" title="Ender is a full featured package manager for your browser"><h3>Ender</h3></a><ul>
 <li>Install: <code>ender add chainy-plugin-map</code></li>
@@ -94,7 +94,8 @@ require('chainy').create().require('set map log')
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>chainy-plugin-map/source/index.js</code> is Source + ES5 + <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a></li></ul>
+<ul><li><code>chainy-plugin-map</code> aliases <code>chainy-plugin-map/source/index.js</code></li>
+<li><code>chainy-plugin-map/source/index.js</code> is Source + ES5 + <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a></li></ul>
 
 <!-- /INSTALL -->
 

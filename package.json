@@ -1,7 +1,7 @@
 {
-  "title": "Map action for [ChainyJS](http://chainyjs.org)",
+  "title": "Map action for ChainyJS",
   "name": "chainy-plugin-map",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Chainy action that replaces each item in the array with the result of an asynchronous or synchronous iterator",
   "homepage": "https://github.com/chainyjs/map",
   "license": "MIT",
@@ -70,8 +70,8 @@
       ]
     }
   ],
-  "main": "index.js",
-  "browser": "es2015/index.js",
+  "main": "source/index.js",
+  "browser": "source/index.js",
   "scripts": {
     "setup": "npm install",
     "clean": "rm -Rf ./docs",

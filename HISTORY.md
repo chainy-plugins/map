@@ -1,5 +1,8 @@
 # History
 
+## v1.0.5 2016 June 13
+- Fixed botched `main` and `browser` fields of v1.0.4
+
 ## v1.0.4 2016 June 13
 - Fixed compatability with Chainy Core v1.6.0, when using TaskGroup v5
 
