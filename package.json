@@ -1,9 +1,10 @@
 {
   "title": "Map action for [ChainyJS](http://chainyjs.org)",
   "name": "chainy-plugin-map",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Chainy action that replaces each item in the array with the result of an asynchronous or synchronous iterator",
-  "homepage": "https://github.com/chainy-plugins/map",
+  "homepage": "https://github.com/chainyjs/map",
+  "license": "MIT",
   "keywords": [
     "chainy-action",
     "chainy-standalone",
@@ -14,19 +15,31 @@
     "chainy-addon",
     "chainy"
   ],
-  "license": {
-    "type": "MIT"
-  },
   "badges": {
-    "travis": true,
-    "npm": true,
-    "david": true,
-    "daviddev": true,
-    "gittip": "bevry",
-    "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
-    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+    "list": [
+      "travisci",
+      "npmversion",
+      "npmdownloads",
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "slackin",
+      "patreon",
+      "gratipay",
+      "flattr",
+      "paypal",
+      "bitcoin",
+      "wishlist"
+    ],
+    "config": {
+      "patreonUsername": "bevry",
+      "gratipayUsername": "bevry",
+      "flattrUsername": "balupton",
+      "paypalURL": "https://bevry.me/paypal",
+      "bitcoinURL": "https://bevry.me/bitcoin",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "slackinURL": "https://slack.bevry.me"
+    }
   },
   "author": "2014+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
@@ -36,14 +49,43 @@
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "bugs": {
-    "url": "https://github.com/chainy-plugins/map/issues"
+    "url": "https://github.com/chainyjs/map/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/chainy-plugins/map.git"
+    "url": "http://github.com/chainyjs/map.git"
   },
   "engines": {
     "node": ">=0.4"
+  },
+  "editions": [
+    {
+      "description": "Source + ES5 + Require",
+      "entry": "source/index.js",
+      "directory": "source",
+      "syntaxes": [
+        "javascript",
+        "es5",
+        "require"
+      ]
+    }
+  ],
+  "main": "index.js",
+  "browser": "es2015/index.js",
+  "scripts": {
+    "setup": "npm install",
+    "clean": "rm -Rf ./docs",
+    "compile": "echo 'no compile necessary'",
+    "meta": "npm run meta:projectz",
+    "meta:projectz": "projectz compile",
+    "prepare": "npm run test && npm run meta",
+    "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
+    "release:publish": "npm publish",
+    "release:tag": "git tag v$npm_package_version -a",
+    "release:push": "git push origin master && git push origin --tags",
+    "pretest": "npm run test:eslint",
+    "test:eslint": "eslint ./source",
+    "test": "node --harmony ./source/test.js"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -54,17 +96,10 @@
     "chainy-plugin-set": "1",
     "chainy-plugin-each": "1",
     "chainy-core": "1",
-    "joe": "~1.5.0",
-    "joe-reporter-console": "~1.2.1",
-    "chai": "~1.9.1",
-    "projectz": "~0.3.11"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "node ./test/map-test.js"
-  },
-  "main": "./lib/map.js",
-  "browsers": true
+    "assert-helpers": "^4.4.0",
+    "eslint": "^2.12.0",
+    "joe": "^1.8.0",
+    "joe-reporter-console": "^1.2.1",
+    "projectz": "^1.1.6"
+  }
 }
